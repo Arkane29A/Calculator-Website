@@ -18,11 +18,11 @@ function buttonclick(e)
         display.innerText = "";
     }
         
-    else if (e.target.innerText = "Del")
+//     else if (e.target.innerText = "Del")
         
-    {
-        display.innerText = display.innerText.slice(0, -1);
-    }
+//     {
+//         display.innerText = display.innerText.slice(0, -1);
+//     }
 
 
 
