@@ -35,7 +35,13 @@ function buttonclick(e)
         }
 
     }
-
+    
+       
+    if (e.target.innerText = "Del")
+        
+    {
+        display.innerText = display.innerText.slice(0, -1);
+    }
 
 
     else
