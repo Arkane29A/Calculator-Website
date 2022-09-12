@@ -15,7 +15,7 @@
 
 #display
 {
-
+    overflow: auto;
     position: relative;
     font-family: monospace;
     line-height: 100px;
