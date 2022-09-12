@@ -3,7 +3,7 @@ function buttonclick(e)
 
     e.preventDefault();
 
-    console.log("function");
+    console.log(e.target.innerText);
 
     if ((e.target.innerText).length < 1)
     
@@ -13,20 +13,15 @@ function buttonclick(e)
    
     else if ((e.target.innerText).length == 1)
     {
+
+        
     if (e.target.innerText == "C")
     {
         display.innerText = "";
     }
         
-//     else if (e.target.innerText = "Del")
-        
-//     {
-//         display.innerText = display.innerText.slice(0, -1);
-//     }
-
-
-
-    if (e.target.innerText == "=")
+ 
+    else if (e.target.innerText == "=")
     {
 
         try
@@ -43,7 +38,8 @@ function buttonclick(e)
 
     }
     
-       
+    
+    
   
 
     else
@@ -64,7 +60,19 @@ function buttonclick(e)
 }
 }
 
+
+
+function deletefunc(e)
+{
+   
+    console.log("DELETE");
+    display.innerText = display.innerText.slice(0, -1);
+
+}
+
+
 const buttons = Array.from(document.getElementsByClassName("buttons"));
+const deletebutton = document.getElementById("delete");
 
 
 for (x in buttons)
@@ -72,6 +80,7 @@ for (x in buttons)
     buttons[x].addEventListener("click", buttonclick)
 }
 
+deletebutton.addEventListener("click", deletefunc);
 
 
 
